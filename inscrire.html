@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>S'inscrire</title>
+</head>
+<body>
+    <header>
+        <h1>ENI - MEMORY - S'inscrire</h1>
+        <nav>
+            <ul>
+                <li class="accueil"><a href="index.html">Accueil</a></li>
+                <li class="inscrire"><a href="#">S'inscrire</a></li>
+                <li class="se-connecte"><a href="#">Se connecter</a></li>
+                <li class="profil"><a href="#">Profil</a></li>
+                <li class="jouer"><a href="#">Jouer</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <section class="section2">
+        <div class="container">
+            <h1>Inscrivez-vous</h1>
+            <form action="" method="post">
+                <div class="nom-utilisateur">
+                    <label for="nom">Nom d'utilisateur</label>
+                    <input type="text" id="nom" name="nom" required pattern="[A-Za-z]{3,}" title="3 caractères minimum" placeholder="3 caractères minimum">
+                    <span class="error-message" id="username-error"></span>
+                    <!-- <img class="error" src="ressources/error.svg" alt="error"> -->
+                </div>
+                
+                <div class="emaile">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="votre email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="mot-de-passe">
+                    <label for="mot-de-passe">Mot de passe</label>
+                    <input type="password" id="mot-de-passe" name="mot-de-passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title=" caractères minimum" placeholder="votre mot de passe">
+                    <label class="info" for="mot-de-passe">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum</label>
+                    <div class="securite">
+                        <div class="faible-text" id="faible"> 
+                            <div class="lien-red"></div>
+                            <p class="text">faible</p>
+                        </div>
+                        <div class="moyen-text" id="moyene">
+                            <div class="moyen"></div>
+                            <p class="text">moyen</p>
+                        </div>
+                        <div class="fort-text" id="forte">
+                            <div class="fort"></div>
+                            <p class="text">fort</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="confirmer-mot-de-passe">
+                    <label for="confirmer-mot-de-passe">Confirmer le mot de passe</label>
+                    <input type="password" id="confirmer-mot-de-passe" name="confirmer-mot-de-passe" required placeholder="votre mot de passe">
+                    <span class="error-message" id="confirme-error"></span>
+                </div>
+                <div class="btn">
+                    <button class="sub" id="btn-sub" type="submit" disabled>céation du compte</button>
+                    <button class="nul" type="reset">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

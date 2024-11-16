@@ -44,6 +44,33 @@ header nav ul{
 header nav ul li a{
     color: #fff;
 }
+header nav ul li{
+    transition: all 0.5s ease-in-out;
+}
+
+ .accueil:hover{
+    transform: scale(0.9,0.9);
+    border: 1px solid #fff;
+}
+.inscrire:hover{
+    transform: scale(0.9,0.9);
+    border: 1px solid #fff;
+}
+
+.se-connecte:hover{
+    transform: scale(0.9,0.9);
+    border: 1px solid #fff;
+}
+.profil:hover{
+    transform: scale(0.9,0.9);
+    border: 1px solid #fff;
+}
+.jouer:hover{
+    transform: scale(0.9,0.9);
+    border: 1px solid #fff;
+}
+
+
 
 
 
@@ -104,4 +131,259 @@ header nav ul li a{
 
 .section1 .container .item4 p{
     margin-bottom: 5px;
+}
+
+/* fermeture accueil */
+
+
+/* ouverte inscrire */
+
+.section2{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 20px;
+    background-color: rgb(38, 34, 34);
+    width: 100%;
+    max-width: 550px;
+    margin-left: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.section2 .container h1{
+    text-align: center;
+    color: #fff;
+    /* margin-bottom: 10px; */
+    margin-left: 2em;
+}
+
+.section2 .container form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.section2 .container form .nom-utilisateur{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.section2 .container form .nom-utilisateur .error{
+    width: 18px;
+    position: absolute;
+    top: 38%;
+    left: 67%;
+    display: none;
+}
+.section2 .container form .nom-utilisateur .check{
+    width: 18px;
+    position: absolute;
+    top: 38%;
+    left: 67%;
+    display: none;
+}
+.error-message{
+    display: none;
+}
+
+.section2 .container form .nom-utilisateur label{
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.section2 .container form .nom-utilisateur input{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(38, 34, 34);
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;    
+    border-left: none;    
+    border-right: none;    
+}
+
+.section2 .container form .emaile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section2 .container form .emaile label{
+    color: #fff;
+    font-size: 18px;
+}
+
+.section2 .container form .emaile input{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(38, 34, 34);
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;    
+    border-left: none;    
+    border-right: none;    
+}
+
+.section2 .container form .mot-de-passe{
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+}
+
+.section2 .container form .mot-de-passe label{
+    color: #fff;        
+    font-size: 18px;
+}
+
+.section2 .container form .mot-de-passe input{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(38, 34, 34);
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;    
+    border-left: none;    
+    border-right: none;    
+}    
+
+.section2 .container form .mot-de-passe .info{
+    color:rgb(108, 96, 96); ;       
+    font-size: 13px;
+}
+.section2 .container form .mot-de-passe .securite{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.section2 .container form .mot-de-passe .faible-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.section2 .container form .mot-de-passe .faible-text  .lien-red{
+    width:100px;
+    height: 5px;
+    background-color: red;
+}
+.section2 .container form .mot-de-passe .faible-text .text{
+    margin-top: 15px;
+    color: #ffff;
+    /* text-align: center; */
+}
+
+.section2 .container form .mot-de-passe .moyen-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.section2 .container form .mot-de-passe .moyen-text .text{
+    margin-top: 15px;
+    color: #ffff;
+}
+.section2 .container form .mot-de-passe .moyen-text .moyen{
+    width: 100px;
+    height: 5px;
+    background-color: yellow;
+}
+.section2 .container form .mot-de-passe .fort-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.section2 .container form .mot-de-passe .fort-text .text{
+    margin-top: 15px;
+    color: #ffff;
+}
+.section2 .container form .mot-de-passe .fort-text .fort{
+    width: 100px;
+    height: 5px;
+    background-color: green;
+}
+#faible{
+    display: none;
+}
+#moyene{
+    display: none;
+}
+#forte{
+    display: none;
+}
+
+/* .section2 .container form .mot-de-passe .moyen{
+    width: 18px;
+    position: absolute;
+    top: 38%;
+    left: 67%;
+    display: none;
+}
+.section2 .container form .mot-de-passe .fort{
+    width: 18px;
+    position: absolute;
+    top: 38%;
+    left: 67%;
+    display: none;
+} */
+
+.section2 .container form .confirmer-mot-de-passe{
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+}    
+
+.section2 .container form .confirmer-mot-de-passe label{
+    color: #fff;        
+    font-size: 18px;
+}
+
+.section2 .container form .confirmer-mot-de-passe input{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(38, 34, 34);
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;    
+    border-left: none;    
+    border-right: none;    
+}
+
+.section2 .container form .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.section2 .container form .btn .sub{
+    width: 200px;
+    height: 40px;
+    background-color:bisque;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /* border: 1px solid #fff; */
+    border: none;
+    cursor: pointer;
+}
+.section2 .container form .btn .nul{
+    width: 150px;
+    height: 40px;
+    background-color:bisque;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /* border: 1px solid #fff; */
+    border: none;
+    cursor: pointer;
 }
