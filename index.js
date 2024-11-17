@@ -1,3 +1,42 @@
+let btn1=document.querySelector(".btn #btn-sub").addEventListener("click",function(){
+    validation();
+})
+let form=document.getElementById("form").addEventListener("submit",function(e){
+    e.preventDefault();
+    validation();
+});
+const local =JSON.parse(localStorage.getItem("user"));
+function validation(){
+     document.location.reload();
+    let namee=document.getElementById("nom").value.trim();
+    let email=document.getElementById("email").value.trim();
+    let mdp=document.getElementById("mot-de-passe").value.trim();
+    let mdpConfirmer=document.getElementById("confirmer-mot-de-passe").value.trim();
+
+    // const user={
+    //     nom:namee.value,
+    //     emaile:email.value,
+    //     mdpe:mdp.value,
+    //     mdpConfirmere:mdpConfirmer.value
+    // };
+    
+    // localStorage.setItem("user",JSON.stringify(user));
+
+    localStorage.setItem("name",namee);
+    localStorage.setItem("email",email);
+    localStorage.setItem("mdp",mdp);
+    localStorage.setItem("mdpConfirmer",mdpConfirmer);
+
+
+
+    // let amogeba=localStorage.getItem("name");
+    // let amogeba2=localStorage.getItem("email");
+    // let amogeba3=localStorage.getItem("mdp");
+    // let amogeba4=localStorage.getItem("mdpConfirmer");
+}
+
+
+
 let fiable=document.getElementById("fiable");
 let moyen=document.getElementById("moyene");
 let fore=document.getElementById("forte");
@@ -165,3 +204,7 @@ function controlEmail(){
         return false;
     }
 }
+
+
+
+

@@ -50,24 +50,24 @@ header nav ul li{
 
  .accueil:hover{
     transform: scale(0.9,0.9);
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 .inscrire:hover{
     transform: scale(0.9,0.9);
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 
 .se-connecte:hover{
     transform: scale(0.9,0.9);
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 .profil:hover{
     transform: scale(0.9,0.9);
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 .jouer:hover{
     transform: scale(0.9,0.9);
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 
 
@@ -380,6 +380,121 @@ header nav ul li{
     height: 40px;
     background-color:bisque;
     color: black;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /* border: 1px solid #fff; */
+    border: none;
+    cursor: pointer;
+}
+
+/* fermer inscrire */
+
+/* ouvrir connecter */
+
+
+.section3{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 20px;
+    background-color: rgb(38, 34, 34);
+    width: 100%;
+    max-width: 550px;
+    margin-left: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.section3 .container h1{
+    text-align: center;
+    color: #fff;
+    /* margin-bottom: 10px; */
+    /* margin-left: 2em; */
+}
+
+.section3 .container form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center ;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.section3 .container form .entrez-email {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section3 .container form .entrez-email label{
+    color: #fff;        
+    font-size: 18px;
+}
+
+.section3 .container form .entrez-email input{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(38, 34, 34);
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;    
+    border-left: none;    
+    border-right: none;    
+}
+
+.section3 .container form .votre-mot-de-passe{
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+}
+
+.section3 .container form .votre-mot-de-passe label{
+    color: #fff;        
+    font-size: 18px;
+}
+
+.section3 .container form .votre-mot-de-passe input{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(38, 34, 34);
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;    
+    border-left: none;    
+    border-right: none;
+}
+
+.section3 .container form .btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.section3 .container form .btn2 .sub{
+    width: 200px;
+    height: 40px;
+    background-color:bisque;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    /* border: 1px solid #fff; */
+    border: none;
+    cursor: pointer;
+}
+
+
+.section3 .container form .btn2 .nul{
+    width: 150px;   
+    height: 40px;
+    background-color:bisque;
+    color: black;    
     outline: none;
     border-radius: 5px;
     font-size: 16px;
